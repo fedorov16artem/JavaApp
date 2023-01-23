@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #77DDE7;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.comapy.controllers.controller">
+   <children>
+      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="1000.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Справка">
+            <items>
+                  <MenuItem fx:id="AuthorEmployee" mnemonicParsing="false" text="Об авторе" />
+              <MenuItem fx:id="ProgrammEmployee" mnemonicParsing="false" text="О программе" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TableView fx:id="Table_Emploeys" layoutX="164.0" layoutY="27.0" prefHeight="528.0" prefWidth="837.0" style="-fx-background-color: #FFF;">
+        <columns>
+          <TableColumn fx:id="NumbarTableEmployee" prefWidth="23.0" text="№" />
+          <TableColumn fx:id="idTableEmployee" prefWidth="64.0" text="ID" />
+            <TableColumn fx:id="titleTableEmployee" prefWidth="156.0" text="Название отдела" />
+            <TableColumn fx:id="NSPtableEmployee" prefWidth="337.0" text="ФИО" />
+            <TableColumn fx:id="ageTableEmployee" prefWidth="127.0" text="Возраст" />
+            <TableColumn fx:id="ZPtableEmployee" prefWidth="129.0" text="ЗП" />
+        </columns>
+      </TableView>
+      <TextField fx:id="StringIDEmployee" layoutX="7.0" layoutY="217.0" promptText="Id" />
+      <Button fx:id="addEmployee" layoutX="31.0" layoutY="287.0" mnemonicParsing="false" onAction="#addEM" prefHeight="26.0" prefWidth="79.0" style="-fx-background-color: Green;" text="Добавить" />
+      <Text layoutX="12.0" layoutY="582.0" strokeType="OUTSIDE" strokeWidth="0.0" text="by encoded codeddome" wrappingWidth="139.0" />
+      <TextField fx:id="StringOtdelEmployee" layoutX="7.0" layoutY="251.0" promptText="Отдел" />
+      <Button fx:id="ButtonEm" layoutX="164.0" layoutY="557.0" mnemonicParsing="false" onAction="#BTEM" prefHeight="25.0" prefWidth="162.0" style="-fx-background-color: #ffa500;" text="Сотрудники" />
+      <Button fx:id="OtdelEmployee" layoutX="338.0" layoutY="557.0" mnemonicParsing="false" onAction="#OTEM" prefHeight="25.0" prefWidth="162.0" style="-fx-background-color: #ffa500;" text="Отдел" />
+      <Button fx:id="UnaddButtonEmployee" layoutX="31.0" layoutY="323.0" mnemonicParsing="false" onAction="#UNadd" prefHeight="26.0" prefWidth="79.0" style="-fx-background-color: Red;" text="Удалить" />
+   </children>
+</AnchorPane>

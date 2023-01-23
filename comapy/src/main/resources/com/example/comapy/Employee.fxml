@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="581.0" style="-fx-background-color: #77DDE7;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.comapy.controllers.Office">
+   <children>
+      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="581.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Справка">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Об авторе" />
+              <MenuItem mnemonicParsing="false" text="О программе" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TableView fx:id="Table_Emploeys1" layoutX="175.0" layoutY="27.0" prefHeight="395.0" prefWidth="406.0">
+         <columns>
+            <TableColumn fx:id="idTable_Emploeys1" prefWidth="49.0" text="ID" />
+            <TableColumn fx:id="FIOTable_Emploeys1" prefWidth="214.4000244140625" text="ФИО" />
+            <TableColumn fx:id="ageTable_Emploeys1" prefWidth="63.199951171875" text="Возраст" />
+            <TableColumn fx:id="ZPTable_Emploeys1" prefWidth="104.00006103515625" text="ЗП" />
+         </columns>
+      </TableView>
+      <Button fx:id="KnopkaOtdel" layoutX="48.0" layoutY="36.0" mnemonicParsing="false" onAction="#KOT" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #ffa500;" text="Отдел" />
+      <Button fx:id="BDEmployes" layoutX="47.0" layoutY="70.0" mnemonicParsing="false" onAction="#BDE" style="-fx-background-color: #ffa500;" text="База данных" />
+      <Button fx:id="RedEmployees" layoutX="33.0" layoutY="478.0" mnemonicParsing="false" onAction="#RedE" style="-fx-background-color: #ffa500;" text="Отредактировать " />
+      <TextField fx:id="RedwagesEmployess" layoutX="16.0" layoutY="445.0" promptText="Зарплата" />
+      <TextField fx:id="RedAGEEmployess" layoutX="16.0" layoutY="412.0" promptText="Возраст" />
+      <TextField fx:id="FIOEmployess" layoutX="16.0" layoutY="106.0" promptText="ФИО" />
+      <TextField fx:id="ageEmployess" layoutX="16.0" layoutY="138.0" promptText="Возраст" />
+      <TextField fx:id="ZPEmployess" layoutX="16.0" layoutY="171.0" promptText="ЗП" />
+      <Button fx:id="addEmployes1" layoutX="46.0" layoutY="201.0" mnemonicParsing="false" onAction="#addEmp" style="-fx-background-color: #ffa500;" text="Добавить" />
+      <Button fx:id="unaddEmploees" layoutX="50.0" layoutY="237.0" mnemonicParsing="false" onAction="#unaddEmployes" style="-fx-background-color: #ffa500;" text="Удалить" />
+      <TextField fx:id="DelEmployess1" layoutX="16.0" layoutY="272.0" promptText="Удалить" />
+      <TextField fx:id="RedFIOEmployess" layoutX="14.0" layoutY="378.0" promptText="ФИО" />
+      <TextField fx:id="IDEmployess" layoutX="14.0" layoutY="345.0" promptText="ID(изменить)" />
+      <Text layoutX="483.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="43.20001220703125" />
+      <Text layoutX="329.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сумма Зарплаты: " />
+   </children>
+</AnchorPane>
